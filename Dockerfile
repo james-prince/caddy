@@ -9,4 +9,4 @@ FROM caddy:latest
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
-ENTRYPOINT ["/usr/bin/caddy docker-proxy"]
+ENTRYPOINT ["/usr/bin/caddy", "docker-proxy"]
