@@ -1,0 +1,12 @@
+[submodule "modules/caddy-docker-proxy"]
+	path = modules/caddy-docker-proxy
+	url = https://github.com/lucaslorentz/caddy-docker-proxy
+[submodule "modules/caddy-rfc2136"]
+	path = modules/caddy-rfc2136
+	url = https://github.com/caddy-dns/rfc2136
+[submodule "modules/caddy-crowdsec-bouncer"]
+	path = modules/caddy-crowdsec-bouncer
+	url = https://github.com/hslatman/caddy-crowdsec-bouncer
+[submodule "modules/caddy-cloudflare"]
+	path = modules/caddy-cloudflare
+	url = https://github.com/caddy-dns/cloudflare
