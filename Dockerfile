@@ -1,4 +1,4 @@
-FROM caddy:2.9.1-builder-alpine AS builder
+FROM caddy:2.10.0-builder-alpine AS builder
 
 RUN xcaddy build \
     --with github.com/lucaslorentz/caddy-docker-proxy/v2 \
@@ -6,7 +6,7 @@ RUN xcaddy build \
     --with github.com/hslatman/caddy-crowdsec-bouncer/http \
     --with github.com/caddy-dns/rfc2136
 
-FROM caddy:2.9.1
+FROM caddy:2.10.0
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
